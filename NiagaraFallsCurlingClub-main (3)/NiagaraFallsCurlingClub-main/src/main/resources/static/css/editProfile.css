@@ -1,0 +1,84 @@
+#header {
+  text-align: center;
+}
+
+
+.text-field {
+  position: relative;
+  margin: 10px 2.5px 20px 2.5px;
+}
+
+input {
+  display: inline-block;
+  border: thin solid #fafafa;
+  border-bottom: solid medium skyblue;
+  color:skyblue;
+  background-color: #fafafa;
+  padding: 10px 10px 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+input:focus {
+      border: thin solid skyblue;
+      border-bottom: solid medium skyblue;
+      background-color:#fff;
+  }
+
+label {
+  color: #999;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s;
+}
+
+input:focus ~ label, input:valid ~ label {
+  top: -10px;
+  left: 15px;
+  font-size: small;
+  color: skyblue;
+  background-color:#fff;
+  padding:0 5px 0 5px;
+}
+
+
+.split {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.btnChangePassword {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

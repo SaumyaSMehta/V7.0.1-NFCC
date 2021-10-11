@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Create Tournament</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+<body>
+
+    
+
+
+    <form th:action="@{/createTournamentFunction}" th:object="${tournamentData}" method="POST">
+        <label>Tournament Name : </label><input type="text" required th:field="*{name}"/>
+        <label>Description : </label><input type="text" required th:field="*{description}"/>
+        <label>Start Date : </label><input type="datetime-local" required th:field="*{startTime}"/>
+        <label>End Date : </label><input type="datetime-local" required th:field="*{endTime}"/>
+        <label>Max Participants : </label><input type="number" required th:field="*{maximumParticipants}"/>
+        <button type="submit">Create Tournament</button>
+    </form>
+
+
+      
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>View League</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+  </head>
+  
+  <body>
+    <h1>Leagues</h1>
+    <table>
+        <tr th:each="league : ${leaguesList}">
+            <form th:action="@{/navigateToLeague?leagueId=} + ${league.getLeagueId()}" method="POST"> 
+            <div>
+                    <label th:text="${league.leagueName}"/><br>
+                    <input type="submit" value="View League">
+                    <br>
+            </div>
+        </form>
+        </tr>
+    </table>
+  
+  
+  </body></html>

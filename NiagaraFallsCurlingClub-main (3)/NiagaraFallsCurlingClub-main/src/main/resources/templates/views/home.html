@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="css/menu.css">
+    </head>
+<body>
+
+    
+<div class="navbar" style="margin-top: 0.2cm; margin-left: 0.2cm; margin-right: 0.2cm">
+
+    <div class="subnav imgdiv">
+      <img class="imgbtnsize" src="logo.png" style="width: 35px; background-color: none; 
+      margin-left: 0.2cm; margin-top: 0.125cm;">
+    </div>
+    <a href="home">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Tournament <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="tournament">All Tournaments</a>
+        <a href="pasttournament">Past Tournaments</a>
+        <a href="futuretournament">Future Tournament</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">Event <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="event">Events This Month</a>
+        <a href="allevents">NFCC Event List</a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn">About Us <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="link1">Link 1</a>
+        <a href="link2">Link 2</a>
+        <a href="link3">Link 3</a>
+        <a href="link4">Link 4</a>
+      </div>
+    </div>
+    <a href="contact">Help</a>
+  
+    <div class="subnavright">
+      <button class="subnavbtn">Profile<i class="fa fa-caret-down"></i></button>
+      <div class="subnavright-content">
+        <a href="account">My Account</a> 
+        <a href="editprofile">Edit Profile</a>
+        <a href="signout">Sign Out</a>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div style="   
+background-color:  rgb(22, 22, 22);;
+width:700px;
+min-height: 550px;
+border: 5px solid #A2AAAD;;
+padding: 50px;
+margin: 20px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 45px;
+
+">
+    <form th:action="@{/editProfileNavigate}" method="POST" style="padding: 5px;">
+        <button type="submit " class="button-52">Edit Profile</button>
+    </form>
+
+    <form th:action="@{/tournamentNavigate}" method="POST" style="padding: 5px;">
+        <button type="submit" class="button-52">All Tournaments</button>
+    </form>
+
+
+    <form th:action="@{/createTournamentNavigate}" method="POST" style="padding: 5px;">
+        <button type="submit" class="button-52">Create Tournament</button>
+    </form>
+    
+    <form th:action="@{/setupMembershipNavigate}" method="POST" style="padding: 5px;">
+        <button type="submit" class="button-52">Setup Membership</button>
+    </form>
+    
+
+    <form th:action="@{/matchNavigate}" method="POST" style="padding: 5px;">
+        <button type="submit" class="button-52">Matches</button>
+    </form>
+
+    <form th:action="@{/navigateLeagueSelection}" method="POST" style="padding: 5px;">
+        <button type="submit" class="button-52">Select League</button>
+    </form>
+
+</div>
+</body>
+</html>

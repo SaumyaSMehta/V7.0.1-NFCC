@@ -1,0 +1,20 @@
+.tournamentDiv{
+    margin-top:2px ;
+    border: 2px solid black;
+    background-color: aqua;
+    width: 100%;
+    height: 10vh;
+}
+
+.placementDiv{
+  margin-top: 5px;
+}
+
+.registerBtn{
+    position: absolute;
+    right: 1%;
+}
+
+.center{
+    text-align: center;
+}

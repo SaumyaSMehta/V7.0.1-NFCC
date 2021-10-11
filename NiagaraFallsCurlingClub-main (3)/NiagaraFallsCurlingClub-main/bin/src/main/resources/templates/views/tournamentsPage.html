@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Tournament</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" th:href="@{/css/tournament.css}">
+        <script type="text/javascript" th:src="@{/js/tournament.js}"></script>
+
+    </head>
+    <body>
+    
+
+
+        <H1 class="center">Ongoing Tournaments</H1>
+
+
+        <table>
+            <tr th:each="tournament : ${tournamentList}">
+                <form th:action="@{/sendTournamentRegisterRequest?tournamentId=} + ${tournament.getTournamentId()}" method="POST"> 
+                <div class="tournamentDiv">
+                        <label th:text="${tournament.name}"/><br>
+                        Description : <label th:text="${tournament.description}"/><br>
+                        Start Date : <label th:text="${tournament.startTime}"/><br>
+                        End Date : <label th:text="${tournament.endTime}"/><br>
+                        Max Participants : <label th:text="${tournament.maximumParticipants}"/>
+                        <input type="submit" value="Register" class="registerBtn">
+                </div>
+            </form>
+            </tr>
+        </table>
+
+
+
+    </body>
+</html>

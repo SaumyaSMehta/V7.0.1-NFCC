@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Sign In</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" th:href="@{/css/index.css}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="formed">
+                <form method="post">
+        
+                    <h1>Sign in </h1>
+                    <br><br>
+                    <input id="email" type="text" required name="email" class="placehAnimation"/>
+                    <label for="email" alt="Email" placeholder="Email" class="placehAnimationLabel"></label>
+        
+                   
+                    <input  class="nPassword placehAnimation" type="text" required name="password"/>
+                    <label  alt="Password" placeholder="Password" class="placehAnimationLabel"></label>
+        
+                    <c:set var="bar" value="${param.email}" scope="session"/>
+        
+                    <br><br>
+
+                    <input class="SignIn" type="submit" value="Sign in">
+        
+                    <div class="SignUp">
+                        <p>Don't have an account? <a href="signup">Sign up</a>.</p>
+                    </div>
+        
+        
+                </form>
+        
+            </div>
+        <!-- <img th:src="@{/images/NFCClogo.jpg}" >
+         -->
+            
+        
+        </div>
+        </body>
+</html>

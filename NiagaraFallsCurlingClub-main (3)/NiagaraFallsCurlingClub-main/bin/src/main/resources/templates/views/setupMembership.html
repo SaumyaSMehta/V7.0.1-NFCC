@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" th:href="@{/css/setupMembership.css}">
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">MEMBERSHIP OPTIONS</a></li>
+      </ul>
+
+<form th:action="@{/saveMembershipInfo}" method="POST">
+
+<div class="box">
+    
+    
+        
+        <div class="Grid">
+          <div id="item-0" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 70px; ">
+              
+              MONDAY
+            
+            </div>
+          <div id="item-1" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 110px; ">&nbsp;
+
+           TUESDAY
+
+          </div>
+
+          <div id="item-2" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 110px; ">&nbsp;
+        WEDNESDAY  
+        </div>
+
+          <div id="item-3" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 110px; ">&nbsp;
+
+THURSDAY
+
+
+          </div>
+          <div id="item-4" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+
+          FRIDAY
+
+          </div>
+          <div id="item-5" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 70px; ">&nbsp;
+
+SUNDAY
+
+          </div>
+          <div id="item-6"
+          style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+
+            SENIOR MEN
+
+          </div>
+          <div id="item-7" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+        PARTNER'S LEAGUE
+        
+        </div>
+          <div id="item-8"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+        
+        1:00 P.M
+        </div>
+          <div id="item-9"
+          style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">
+          
+          
+          &nbsp;
+        
+          7:00 P.M
+        
+        </div>
+          <div id="item-10"
+          style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+        
+          <input type="checkbox" id="SENIORMEN" name="MONseniorMen"
+         unchecked>  
+        </div>
+          <div id="item-11"
+          style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+
+            <input type="checkbox" id="PARTNER'S LEAGUE" name="MONpartnersLeague"
+            unchecked>
+
+          </div>
+          <div id="item-12"
+          style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+
+DAY LADIES
+
+          </div>
+          <div id="item-13"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        SENIOR MEN
+        </div>
+          <div id="item-14"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          RECREATIONAL CO-ED
+        </div>
+          <div id="item-15"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        DAY LADIES
+        </div>
+          <div id="item-16"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        SENIOR MEN
+        </div>
+          <div id="item-17"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        BRODIE
+        </div>
+          <div id="item-18"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        DAY CO-ED  
+        </div>
+          <div id="item-19"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        GIRLS ROCK 
+        </div>
+          <div id="item-20"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        MIXED LEAGUE  
+        </div>
+          <div id="item-21"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        FRIDAY NIGHT DOUBLES
+        </div>
+          <div id="item-22"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        LITTLE ROCKS  
+        </div>
+          <div id="item-23"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        YOUTH CURLING
+        </div>
+          <div id="item-24"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        1:00 P.M  
+        </div>
+          <div id="item-25"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        1:00 & 3:30 P.M  
+        </div>
+          <div id="item-26"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        6:30 & 8:45 P.M
+        </div>
+          <div id="item-27"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;  
+          
+        1:00 P.M
+        </div>
+          <div id="item-28"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        1:00 P.M</div>
+          <div id="item-29"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        6:30 & 9:00 P.M
+        </div>
+          <div id="item-30"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          1:00 P.M
+        </div>
+          <div id="item-31"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          5:30-6:30 P.M
+        </div>
+          <div id="item-32"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+          
+        7:00 P.M
+        </div>
+          <div id="item-33"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        6:30 & 8:00 P.M  
+        </div>
+          <div id="item-34"   style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+        10:30am - 11:30am  
+        </div>
+          <div id="item-35"
+          style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; "
+          >&nbsp;
+        
+          10:30am - 12:30am  
+        </div>
+          <div id="item-36" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+
+            <input type="checkbox" id="DAY LADIES" name="TUEdayLadies"
+            unchecked>
+          </div>
+          <div id="item-37" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+
+            <input type="checkbox" id="SENIORMEN" name="TUEseniorMen"
+            unchecked>
+
+          </div>
+          <div id="item-38" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="RECREATIONAL CO-ED" name="TUErecreationalCoed"
+            unchecked>
+
+          </div>
+          <div id="item-39" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+
+            <input type="checkbox" id="DAY LADIES" name="WEDdayLadies"
+            unchecked>
+          </div>
+          <div id="item-40" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+
+            <input type="checkbox" id="SENIORMEN" name="WEDseniorMen"
+            unchecked>
+
+          </div>
+          <div id="item-41" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="BRODIE" name="WEDbrodie"
+            unchecked>
+          </div>
+          <div id="item-42" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="DAY CO-ED" name="THUdayCoed"
+            unchecked>
+          </div>
+          <div id="item-43" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="GIRLS ROCK" name="THUgirlsRock"
+            unchecked>
+          </div>
+          <div id="item-44"  style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="MIXED LEAGUE" name="THUmixedLeague"
+            unchecked>
+          </div>
+          <div id="item-45" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="FRIDAY NIGHT DOUBLES" name="FRInightDoubles"
+            unchecked>
+          </div>
+          <div id="item-46" style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="LITTLE ROCKS" name="SUNlittleRocks"
+            unchecked>
+
+          </div>
+          <div id="item-47"  style="
+          text-align: center;
+          vertical-align: middle;
+          line-height: 30px; ">&nbsp;
+            <input type="checkbox" id="YOUTH CURLING" name="SUNyouthCurling"
+            unchecked>
+          </div>
+        </div>
+        
+        
+    </div>
+    <button type="submit" >Save membership</button>
+  </form>
+</body>
+</html>

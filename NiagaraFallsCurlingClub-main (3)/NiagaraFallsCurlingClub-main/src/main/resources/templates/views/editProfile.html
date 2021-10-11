@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Edit Profile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/editProfile.js"></script>
+    <link rel="stylesheet" href="css/editProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </head>
+  
+  <body>
+    <h1 id="header">Edit Profile</h1>
+
+
+
+
+    <form th:action="@{/userDetailsForm}" th:object="${userData}" method="POST">
+      <div class="split left">
+        <div class="centered">
+          <div class="text-field">
+            <input type="text" required="" th:field="*{firstName}">
+            <label>First Name</label>
+          </div>
+        
+          <div class="text-field">
+            <input type="text" required="" th:field="*{lastName}">
+            <label>Last Name</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required="" th:field="*{email}">
+            <label>Email</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required="" th:field="*{primaryPhone} ">
+            <label>Phone Number</label>
+          </div>
+
+          <div class="text-field">
+            <input type="text" required="" th:value="*{address?.streetName != null} ? *{address?.streetName} : '' " name="streetName">
+            <label>Street</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required="" th:value="*{address?.city != null} ? *{address?.city} : '' " name="city">
+            <label>City</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required="" th:value="*{address?.province != null} ? *{address?.province} : '' " name="province">
+            <label>Province</label>
+          </div>
+
+          <div class="text-field">
+            <input type="text" required=""  th:value="*{address?.postalCode != null} ? *{address?.postalCode} : '' " name="postalCode" >
+            <label>Postal code</label>
+          </div>
+                
+        <button class="btnChangePassword" value="Update User Information" >
+          Update User Information
+        </button>
+        </div>
+       
+      </div>
+      
+    </form>
+  
+  
+      <div class="split right">
+        <div class="centered">
+          <h2>Change Password</h2>
+  
+          <form th:action="@{/userPasswordForm}" method="POST">
+          <div class="text-field">
+            <input type="password" name="oldPassword" autocomplete="current-password" required="" id="id_password">
+            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+            <label>Current Password</label>
+          </div>
+  
+          <div class="text-field">
+          <input type="password" name="newPassword" autocomplete="current-password" required="" id="id_password" t>
+          <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+          <label>New Password</label>
+
+          <button class="btnChangePassword" value="Change Password" type="submit">
+            Change Password
+          </button>
+        </form>
+        </div>
+  
+  
+ 
+
+
+        <form th:action="@{/emergencyContactForm}" method="POST" th:object="${emergencyContact}">
+  
+          <h2>Emergency Contact</h2>
+          <div class="text-field">
+            <input type="text" required th:field="*{firstName}"/>
+            <label>First Name</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required th:field="*{lastName}"/>
+            <label>Last Name</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required th:field="*{email}"/>
+            <label>Email</label>
+          </div>
+  
+          <div class="text-field">
+            <input type="text" required th:field="*{phoneNumber}">
+            <label>Phone Number</label>
+          </div>
+          
+        <button class="btnChangePassword" value="Update Information">
+          Submit Button
+        </button>
+
+      </form>
+  
+  
+  
+        </div>
+      </div>
+  
+  
+  
+  
+  </body></html>

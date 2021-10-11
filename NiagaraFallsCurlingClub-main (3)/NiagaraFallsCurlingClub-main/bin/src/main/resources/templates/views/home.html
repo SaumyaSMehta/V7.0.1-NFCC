@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+<body>
+
+
+    <form th:action="@{/editProfileNavigate}" method="POST">
+        <button type="submit ">Edit Profile</button>
+    </form>
+
+    <form th:action="@{/tournamentNavigate}" method="POST">
+        <button type="submit">All Tournaments</button>
+    </form>
+
+
+    <form th:action="@{/createTournamentNavigate}" method="POST">
+        <button type="submit">Create Tournament</button>
+    </form>
+    
+    <form th:action="@{/setupMembershipNavigate}" method="POST">
+        <button type="submit">Setup Membership</button>
+    </form>
+    
+     <form th:action="@{/createEventNavigate}" method="POST">
+        <button type="submit">Create Event</button>
+    </form>
+</body>
+</html>

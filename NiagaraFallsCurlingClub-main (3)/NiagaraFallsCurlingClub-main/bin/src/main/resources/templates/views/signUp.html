@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>SignUp</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" th:href="@{/css/index.css}">
+    </head>
+    <body>
+        <div class="split left">
+            <div class="centre">
+                <h2>Welcome Back</h2>
+                <p>Sign In to explore the tournaments and events happening at the Niagara Falls Curling Club !</p>
+
+               <input onclick="location.href='signin'" type="button" value="Sign In" class="SignUp" id="SignInbtn">
+               <br><br>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centre">
+               
+                 <form method="post">
+            
+                     <h3>CREATE ACCOUNT</h3>
+          
+                    <div id="gSignInWrapper">
+                         <label class="signinlabel">Sign up with </label> 
+                        <div id="customBtn" class="customGPlusSignIn">
+                            <span class="icon">  <!-- <img th:src="@{/images/googlesmall.png}" width="20px" height="auto" >--> </span>
+                            <span class="buttonText">Google</span>
+                         </div>
+                         <div id="customBtn" class="customGPlusSignIn">
+                            <span class="icon">  <!-- <img th:src="@{/images/googlesmall.png}" width="20px" height="auto" >--> </span>
+                            <span class="buttonText">Facebook</span>
+                         </div>
+                    </div>
+
+                    <br>
+
+                    <hr>
+           
+                <input id="input" type="text" required name="firstName" class="placehAnimation"/>
+                <label for="input" alt="First name" placeholder="First name" class="placehAnimationLabel"></label>
+            
+                <input id="lname" type="text" required name="lastName" class="placehAnimation"/>
+                <label for="lname" alt="Last name" placeholder="Last name" class="placehAnimationLabel"></label>
+                
+
+                <input id="email" type="text" required name="email" class="placehAnimation"/>
+                <label for="email" alt="Email" placeholder="Email" class="placehAnimationLabel"></label>
+            
+                <input  id="pNumber" type="text" required name="phoneNumber" class="placehAnimation"/>
+                <label for="pNumber" alt="Phone Number" placeholder="Phone Number" class="placehAnimationLabel"></label>
+                
+                <input  class="nPassword placehAnimation" type="text" required name="password" />
+                <label  alt="Password" placeholder="Password" class="placehAnimationLabel"></label>
+            
+                <input  class="cPassword placehAnimation" type="text" required name="confirmPassword" />
+                <label  alt="Confirm Password" placeholder="Confirm Password" class="placehAnimationLabel"></label><br>
+                
+                <input class="SignUp" type="submit" value="Sign up">
+            
+                    
+                </form>
+            </div>
+            
+         <!-- <img th:src="@{/images/NFCClogo.jpg}" > -->
+        
+        </div>
+    </body>
+</html>

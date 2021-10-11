@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+
+<head>
+
+  <title>
+    Create an Event
+  </title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" th:href="@{/css/createEvent.css}">
+</head>
+
+<body>
+
+
+  <div class="form-style-2">
+    <h1 id="createEventheader">Create an Event</h1>
+    <form action="" method="post">
+    <label for="eventName"><span>Event Name <span class="required">*</span></span><input type="text" class="input-field" name="eventName" value="" /></label>
+    <label for="field2"><span>Event Duration <span class="required">*</span></span><input type="datetime-local" class="input-field2" name="eventStartDT" value="" /> To <input type="datetime-local" class="input-field2" name="eventEndDT" value="" /></label>
+
+    </select></label> -->
+    <label for="field5"><span>Event Description <span class="required">*</span></span><textarea name="eventDescription" class="textarea-field"></textarea></label>
+    
+    <label><span> </span><input type="submit" value="Submit" /></label>
+    </form>
+    </div>
+</body>
+
+</html>
